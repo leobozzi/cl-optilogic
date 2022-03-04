@@ -44,6 +44,7 @@
         'base_ux',
         'stock_ux',
         # 'payroll',
+        'project',
 
         # Contabilidad
         'account',
@@ -135,7 +136,7 @@
 
     'env-ver': '2',
     'odoo-license': 'CE',
-    'port': '8069',
+    'port': '8169',
     # 'server_user': ''
 
     'config': [
@@ -196,7 +197,8 @@
             'geoip_database = /usr/share/GeoIP/GeoLite2-City.mmdb',
             'http_enable = True',
             'http_interface =',
-            'http_port = 8069',
+            'http_port = 8169',
+            'longpolling_port = 8172',
             'limit_time_real_cron = -1',
             'list_db = True',
             'log_db = False',
