@@ -277,7 +277,6 @@
         'https://github.com/OCA/hr-holidays oca-hr-holidays',
         'https://github.com/OCA/hr-timesheet oca-hr-timesheet',
         # 'https://github.com/OCA/knowledge oca-knowledge',
-        'https://github.com/OCA/stock-logistics-warehouse oca-stock-logistics-warehouse',
         # 'https://github.com/OCA/management-system oca-management-system',
         'https://github.com/OCA/manufacture oca-manufacture',
         'https://github.com/OCA/manufacture-reporting oca-manufacture-reporting',
@@ -306,7 +305,7 @@
         # 'https://github.com/OCA/stock-logistics-barcode oca-stock-logistics-barcode',
         # 'https://github.com/OCA/stock-logistics-reporting oca-stock-logistics-reporting', # noqa
         # 'https://github.com/OCA/stock-logistics-transport oca-stock-logistics-transport', # noqa
-        # 'https://github.com/OCA/stock-logistics-warehouse oca-stock-logistics-warehouse', # noqa
+        'https://github.com/OCA/stock-logistics-warehouse oca-stock-logistics-warehouse',  # noqa
         'https://github.com/OCA/stock-logistics-workflow oca-stock-logistics-workflow',
         'https://github.com/OCA/timesheet oca-timesheet',
         # 'https://github.com/OCA/vertical-association oca-vertical-association',
