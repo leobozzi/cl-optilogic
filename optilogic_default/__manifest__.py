@@ -45,7 +45,7 @@
         'stock_ux',
         # 'payroll',
         'project',
-        'flet',
+        'fleet',
 
         # Contabilidad
         'account',
