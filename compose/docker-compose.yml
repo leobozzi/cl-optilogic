@@ -1,4 +1,4 @@
-# Compose file odoo Ultranet v13.0 + https
+# Compose file odoo Optilogic v13.0 + https
 # Ojo hay que crear el /odoo_ar/traefik/acme.json y ponerle chmod 600
 # Version 2021-11-11
 #################################################################################
