@@ -344,7 +344,7 @@
        #'odoo jobiols/odoo-jeo:13.0',
        'odoo lbozzi/odoo-docker-lb:13.0',
        'postgres postgres:12.10-alpine',
-       'aeroo adhoc/aeroo-docs',
-       'nginx nginx',
+       #'aeroo adhoc/aeroo-docs',
+       #'nginx nginx',
     ]
 }
