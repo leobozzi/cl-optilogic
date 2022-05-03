@@ -56,6 +56,9 @@ services:
         - postgres:db
     environment:
         - SERVER_MODE=
+    ports:
+        - "${HTTP_PORT_OPT}:8069"
+        - "${LONGPOLLING_PORT_OPT}:8072"
     labels:
         # router rou-odoo --> Acceso a odoo en puerto 80
         - traefik.http.routers.rou-odoo.rule=Host(`${SITE_DOMAIN_OPT}`)
@@ -112,6 +115,9 @@ services:
         - postgres:db
     environment:
         - SERVER_MODE=
+    ports:
+        - "${HTTP_PORT_BBN}:8069"
+        - "${LONGPOLLING_PORT_BBN}:8072"
     labels:
         # router rou-odoo --> Acceso a odoo en puerto 80
         - traefik.http.routers.rou-odoo.rule=Host(`${SITE_DOMAIN_BBN}`)
