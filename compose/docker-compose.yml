@@ -32,15 +32,15 @@ services:
         - /var/run/docker.sock:/var/run/docker.sock:ro
         - /odoo_ar/traefik/:/opt/traefik/
 
-  postgres:
+  postgres-opt:
     image: postgres:12.10-alpine
-    container_name: postgres
+    container_name: pg-optilogic
     restart: unless-stopped
     environment:
-        - POSTGRES_USER=odoo
-        - POSTGRES_PASSWORD=odoo
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=odoo
     volumes:
-        - ${PROJECT_PATH_OPT}/postgresql:/var/lib/postgresql/data
+      - ${PROJECT_PATH_OPT}/postgresql:/var/lib/postgresql/data
 
   optilogic:
     image: ${ODOO_IMAGE_OPT}
@@ -53,7 +53,7 @@ services:
         - ${PROJECT_PATH_OPT}/sources:/opt/odoo/custom-addons
         - ${PROJECT_PATH_OPT}/backup_dir:/var/odoo/backups/
     links:
-        - postgres:db
+        - postgres-opt:db
     environment:
         - SERVER_MODE=
     ports:
@@ -101,6 +101,16 @@ services:
         - traefik.http.routers.rou-chat-secure.service=srv-chat-secure
         - traefik.http.services.srv-chat-secure.loadbalancer.server.port=${LONGPOLLING_PORT_OPT}
 
+  postgres-bbn:
+    image: postgres:12.10-alpine
+    container_name: pg-backbone
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=odoo
+    volumes:
+      - ${PROJECT_PATH_BBN}/postgresql:/var/lib/postgresql/data
+
   backbone:
     image: ${ODOO_IMAGE_BBN}
     container_name: backbone
@@ -112,7 +122,7 @@ services:
         - ${PROJECT_PATH_BBN}/sources:/opt/odoo/custom-addons
         - ${PROJECT_PATH_BBN}/backup_dir:/var/odoo/backups/
     links:
-        - postgres:db
+        - postgres-bbn:db
     environment:
         - SERVER_MODE=
     ports:
