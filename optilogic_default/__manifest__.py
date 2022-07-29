@@ -81,6 +81,9 @@
         'account_transfer_unreconcile',
         'base_currency_inverse_rate',
         'product_currency',
+        'purchase_global_discount',
+        'purchase_discount',
+
 
         # Cybrosys
         'base_accounting_kit',
