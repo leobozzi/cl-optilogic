@@ -83,8 +83,8 @@
         'product_currency',
 
         # Cybrosys
-        'base_accounting_kit',
-        'crm_kit',
+        #'base_accounting_kit',
+        #'crm_kit',
 
         # Localización
         # All
