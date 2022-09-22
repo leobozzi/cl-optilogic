@@ -81,6 +81,9 @@
         'account_transfer_unreconcile',
         'base_currency_inverse_rate',
         'product_currency',
+        'purchase_global_discount',
+        'purchase_discount',
+
 
         # Cybrosys
         #'base_accounting_kit',
@@ -126,6 +129,9 @@
         'web_company_color',
         'backend_theme_v13',
         'odoo_whatsapp_integration',
+        'mis_builder',
+        'mis_builder_cash_flow',
+        'mis_builder_demo',
 
     ],
     'data': [
@@ -281,6 +287,7 @@
         'https://github.com/OCA/manufacture oca-manufacture',
         'https://github.com/OCA/manufacture-reporting oca-manufacture-reporting',
         'https://github.com/OCA/margin-analysis oca-margin-analysis',
+        'https://github.com/OCA/mis-builder oca-mis-builder',
         # 'https://github.com/OCA/multi-company oca-multi-company',
         # 'https://github.com/OCA/oca-custom oca-oca-custom',
         # 'https://github.com/OCA/operating-unit oca-operating-unit',
