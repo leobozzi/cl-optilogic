@@ -135,6 +135,7 @@
 
     ],
     'data': [
+        'views/sale_order.xml',
     ],
     'test': [
     ],
